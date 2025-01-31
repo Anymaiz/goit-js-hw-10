@@ -1,18 +1,81 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+@import "flatpickr/dist/flatpickr.min.css";
+@import "izitoast/dist/css/iziToast.min.css";
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.timer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+}
+
+.value {
+  font-size: 2rem;
+}
+
+.label {
+  font-size: 1rem;
+}
+
+.nav {
+  display: flex;
+  border: 1px solid hotpink;
+  background-color: honeydew;
+  flex-direction: column;
+  padding: 1px 20px;
+  margin: 20px;
+}
+.nav li{
+  padding: 20px;
+}
+
+.snack-btn {
+  margin-top: 20px;
+}
